@@ -70,7 +70,6 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({ open, onClose }) => {
       checklists: filteredChecklists,
     };
 
-    console.log(updatedNewTask);
     await collection?.insert(updatedNewTask);
 
     onClose();
